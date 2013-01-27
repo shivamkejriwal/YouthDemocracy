@@ -1,0 +1,1 @@
+Youth Democracy is political research and analysis portal built on Google App Engine. The goal is to accumulate data that can allow for a more comprehensive analysis. We hope to restructure political thinking of the youth, so that they may elect a leader or party who best represents them.
