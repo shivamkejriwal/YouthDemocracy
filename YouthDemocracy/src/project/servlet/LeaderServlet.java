@@ -37,6 +37,7 @@ public class LeaderServlet extends BaseServlet {
 	    String searchBy = req.getParameter("searchBy");
 	    String searchFor = req.getParameter("searchFor");
 	    int offset=Integer.parseInt(req.getParameter("offset"));
+	    if(offset<0){offset=0;}
 	    //System.out.println("Current Offset:"+offset);
 	    PrintWriter out = resp.getWriter();
 	    if (searchFor == null || searchFor.equals("")) {

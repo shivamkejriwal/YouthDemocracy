@@ -49,7 +49,7 @@ var toggleTextArea= function(textArea) {
 
 //Gets data from the server
 var getData = function(url,currData,successFn,errorFn){
-	//alert("Inside getData");
+	alert("Inside getData");
 	$.ajax({
 		url : url,
 		type : "GET",
@@ -91,7 +91,7 @@ var sendData = function(url,currData,successFn,errorFn){
 
 var leader_offset=0;
 var leader_load=function(toAppend,searchFor,tempOffset){
-	//alert("inside leader load::searchFor:"+searchFor);
+	alert("inside leader load::searchFor:"+searchFor);
 	//$.data("#leader_content_grid", "pagenum", { current: 0});
 	if(typeof tempOffset!="undefined")leader_offset=tempOffset;
 	if(typeof searchFor=="undefined")searchFor="";

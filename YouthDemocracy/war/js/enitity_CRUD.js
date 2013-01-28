@@ -15,7 +15,7 @@ var search = function(entity,canModify,toAppend,htmlID){
 }
 //Populates the data grid
 var populateGrid = function(entity,filter,canModify,htmlID,toAppend){
-	//alert("Inside populateGrid, entity:"+entity+",filter length:"+filter.length+",canModify:"+canModify);
+	alert("Inside populateGrid, entity:"+entity+",filter length:"+filter.length+",canModify:"+canModify);
 	var successFn= function(resp){
 		//alert("populateGrid successFn");
 		var data='';
@@ -138,7 +138,7 @@ var fillGridCell = function(entity,data,canModify){
 
 //leader grid form
 var leaderFillGrid=function(entity,data){
-	//alert("inside leaderFillGrid");
+	alert("inside leaderFillGrid");
 	var Name=data.Name.replace(/ /g,"_");
 	//var linkURL="http://www.youthdemocracy.in/#!leader="+Name;
 	var linkURL="http://www.youthdemocracy.in/object/leader/"+Name+".html";
@@ -375,7 +375,7 @@ var createEntity = function(entity,formID){
 
 //Reads a single data from the server
 var readEntity = function(entity,searchBy,searchFor){
-	//alert("Inside readEntity");
+	alert("Inside readEntity");
 	var filterParam=new Array();
 	filterParam.push(new paramContainer('searchBy',searchBy));
 	filterParam.push(new paramContainer('searchFor',searchFor));
