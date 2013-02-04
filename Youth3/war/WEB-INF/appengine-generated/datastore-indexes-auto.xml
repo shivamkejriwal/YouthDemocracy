@@ -1,9 +1,15 @@
-<!-- Indices written at Sun, 3 Feb 2013 20:46:27 CST -->
+<!-- Indices written at Sun, 8 Jul 2012 02:20:18 PDT -->
 
 <datastore-indexes>
 
     <!-- Used 1 time in query history -->
     <datastore-index kind="Leader" ancestor="false" source="auto">
+        <property name="Page_Rank" direction="asc"/>
+        <property name="Name" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Party" ancestor="false" source="auto">
         <property name="Page_Rank" direction="asc"/>
         <property name="Name" direction="asc"/>
     </datastore-index>
