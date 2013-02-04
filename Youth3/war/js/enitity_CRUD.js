@@ -315,7 +315,7 @@ var userDataForm = function(entity,entityName,formStatus){
 		   } else {
 			   $('#'+formStatus).html('Please log in..');
 		   }
-		 }, {perms:'email,user_hometown,publish_stream'});
+		 }, {perms:'email,user_hometown'});
 
 	
 	
