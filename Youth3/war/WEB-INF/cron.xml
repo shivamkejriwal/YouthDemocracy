@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/assimilatedata</url>
+    <description>Assimilates the user data once a day</description>
+    <schedule>every day 00:00</schedule>
+  </cron>
+</cronentries>

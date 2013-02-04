@@ -2,7 +2,7 @@
 var currOffset=0;
 
 var search = function(entity,canModify,toAppend,htmlID){
-	//alert("Inside search::entity:"+entity+",canmodify:"+canModify+",htmlID:"+typeof htmlID);
+	alert("Inside search::entity:"+entity+",canmodify:"+canModify+",htmlID:"+typeof htmlID);
 	var formEleList = $('form#'+entity+'_search_form').serializeArray();
 	 var filterParam=new Array();
 	 for(var i=0;i<formEleList.length;i++){
@@ -15,7 +15,7 @@ var search = function(entity,canModify,toAppend,htmlID){
 }
 //Populates the data grid
 var populateGrid = function(entity,filter,canModify,htmlID,toAppend){
-	//alert("Inside populateGrid, entity:"+entity+",filter length:"+filter.length+",canModify:"+canModify);
+	alert("Inside populateGrid, entity:"+entity+",filter length:"+filter.length+",canModify:"+canModify);
 	var successFn= function(resp){
 		//alert("populateGrid successFn");
 		var data='';
@@ -59,7 +59,7 @@ var populateGrid = function(entity,filter,canModify,htmlID,toAppend){
 	getData("/"+entity,filter,successFn,errorFn);
 }
 var fillGridCell = function(entity,data,canModify){
-	//alert("inside fillGridCell::"+"entity:"+entity+",data:"+data+",canModify:"+canModify);
+	alert("inside fillGridCell::"+"entity:"+entity+",data:"+data+",canModify:"+canModify);
 	var toUpdate='<td><a style="cursor:pointer;" class="delete_entity" onclick=\'deleteEntity("'+entity+'","'+data.Name+'")\'>Delete</a>'
 					+'| <a style="cursor:pointer;" class="update_entity" onclick=\'updateEntity("'+entity+'","'+data.Name+'")\'>Edit</a></td>';
 	htm='';
