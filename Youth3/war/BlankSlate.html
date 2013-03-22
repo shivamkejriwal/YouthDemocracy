@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:fb="http://www.facebook.com/2008/fbml" 
+	xmlns:fb="http://ogp.me/ns/fb#">
+	
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# youthdemocracy: http://ogp.me/ns/fb/youthdemocracy#">
+		<title>Youth Democracy</title>
+		
+		<!-- External Files-->
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
+		<script type="text/javascript" src='js/script.js'></script>
+		<script type="text/javascript" src='js/enitity_CRUD.js'></script>
+		<script type="text/javascript" src='js/myHistoryFramework.js'></script>
+		<!--<script charset="utf-8" src="js/twitterWidget.js"></script>-->
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		
+		<!-- Open Graph meta -->
+		<meta property="og:title" content="Youth Democracy"/>
+		<meta property="og:url" content="http://www.youthdemocracy.in" />
+		<meta property="og:image" content="img/finger-point.jpg" />
+		<!--<meta property="og:site_name" content="YouthDemocracy.in"/>-->
+		<meta property="og:description" content="YouthDemocracy is a student endeavor to bring analysis and politics together. We aim to use our research to aid your decision." />
+		
+		<!-- Google meta -->
+		<meta itemprop="name" content="Youth Democracy">
+		<meta itemprop="description" content="YouthDemocracy is a student endeavor to bring analysis and politics together. We aim to use our research to aid your decision.">
+		
+		<!-- Google Analytics-->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-32874953-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		
+		<!-- Facebook Initialisation -->
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		    	appId:'316965188382995',channelUrl :'http://www.youthdemocracy.in/channel.html'
+		    	,status:true,cookie:true,xfbml:true});
+		    // Additional initialization code here
+			  	// FB.Canvas.setSize({ width: 800, height: 800 });
+		    	//FB.Canvas.setAutoResize();
+
+		  };
+		
+		  // Load the SDK Asynchronously
+		  (function(d){
+		     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement('script'); js.id = id; js.async = true;
+		     js.src = "//connect.facebook.net/en_US/all.js";
+		     ref.parentNode.insertBefore(js, ref);
+		   }(document));
+		</script>
+		
+		
+		<!-- Google Initialisation -->
+		<!--<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>-->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		<!-- Twitter Initialisation -->
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+			if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+		<!-- YouthDemocracy Initialisation -->
+		<script>$(document).ready(function(){ydInit();});</script>
+		
+		
+		<div id="TitleBar">
+			<h1>Youth Democracy</h1>
+			<div style="margin-top:20px;display: inline-block;line-height:0px;float:right;vertical-align: middle;position: relative;">
+					<div style="height: inherit;margin-right: 17px;float:left;">
+					<fb:like href="https://www.facebook.com/pages/Youth-Democracy-Community/171545239644634" 
+						send="false" layout="button_count" 
+						width="90" show_faces="false"></fb:like>
+						
+					<fb:like href="http://www.youthdemocracy.in" 
+						send="false" layout="button_count" 
+						width="90" show_faces="false" 
+						action="recommend"></fb:like>
+					
+					<!--<fb:like href="http://www.youthdemocracy.in" -->
+					<!--		send="false" layout="button_count" -->
+					<!--		width="90" show_faces="false" -->
+					<!--		colorscheme="light"></fb:like>-->
+					</div>
+					<div style="height: inherit;float:left;">
+						<div class="g-plusone" data-size="medium" data-href="http://www.youthdemocracy.in"></div>
+					</div>
+					<div style="height: inherit;float:left;">
+						<a href="https://twitter.com/share" 
+							class="twitter-share-button" 
+							data-url="http://www.youthdemocracy.in" 
+							data-text="Check out the student endeavor at youthdemocracy.in"></a>
+					</div>
+				</div>
+		</div>
+		<div id="NavBar">
+			<a onclick="goToPage('homepage')">Home</a>
+			<a onclick="goToPage('leader');leader_load(false,'',0);" id="leader_btn">Leader</a>
+			<a onclick="goToPage('party');party_load(false,'',0);" id="party_btn">Party</a>
+			<a onclick="goToPage('causes')" style="display:none" >Causes</a>
+			<a onclick="goToPage('conclusions')" >Data Conclusions</a>
+			<a href="http://voice.youthdemocracy.in/">Blog</a>
+			<a href="https://www.facebook.com/pages/Youth-Democracy-Community/171545239644634">Facebook</a>
+			<a href="http://project.youthdemocracy.in/">Project Page</a>
+			<!--<a onclick="goToPage('our_mission')" >Our Mission</a>-->
+			<div id="fb_userbox" style="float: right;margin-right:5px; display:inline-block;">
+			    	<fb:login-button onlogin="fb_login_handler();" 
+						autologoutlink="true" 
+						perms="email,user_hometown" 
+						size="large"></fb:login-button>
+			</div>
+		</div>
+		<!--Main container-->
+		<div class="contentHolder" id="homepage_content" align="center">
+			<!--Place Page content here-->
+		</div>
+		
+		<div id="footerBar">
+			<div id="footerContainer">
+				<a onclick="goToPage('about_us')">About Us</a>
+				<a onclick="goToPage('contact_us')">Contact Us</a>
+				<a href="https://www.facebook.com/groups/projectyouthdemocracy/">Join Us</a>
+				<a href="http://project.youthdemocracy.in/">Project Page</a>
+				<!--<a onclick="goToPage('help_us')">Help Us</a>-->
+				<div style="display: inline-block;float: right;padding-right:10px;">
+					<div class="fb-send" data-href="http://www.youthdemocracy.in"></div>
+					<!--<fb:like href="http://www.youthdemocracy.in" send="true" layout="button_count" width="90" show_faces="false" action="recommend"></fb:like>-->
+				</div>
+				<!--<div style="display: inline-block;float: right;margin-right: 10px;">-->
+				<!--	<div><a href="https://twitter.com/youth_democracy" -->
+				<!--		class="twitter-follow-button" -->
+				<!--		data-show-count="false" -->
+				<!--		data-show-screen-name="false" -->
+				<!--		data-lang="en">Follow Us</a></div>-->
+				<!--</div>-->
+				<a onclick="goToPage('about_us')" style="float:right;margin-right: 10px;">By Kejriwal & Negandhi</a>
+			</div>
+		</div>
+	</body>
+</html>
