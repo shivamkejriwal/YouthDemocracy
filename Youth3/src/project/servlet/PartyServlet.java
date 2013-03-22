@@ -45,7 +45,7 @@ public class PartyServlet extends BaseServlet {
 			Query query = new Query("Party");
 			query.addSort("Page_Rank", SortDirection.ASCENDING);
 			query.addSort("Name", SortDirection.ASCENDING);
-			FetchOptions fetchOptions = FetchOptions.Builder.withLimit(5);
+			FetchOptions fetchOptions = FetchOptions.Builder.withDefaults();
 			PreparedQuery pq = ds.prepare(query);
 			Iterable<Entity> entities = pq.asQueryResultList(fetchOptions.offset(offset));
 	    	
