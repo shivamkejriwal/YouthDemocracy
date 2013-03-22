@@ -100,7 +100,7 @@ var leader_load=function(toAppend,searchFor,tempOffset){
 	filterParam.push(new paramContainer('searchFor',searchFor));
 	filterParam.push(new paramContainer("offset",leader_offset));
 	//alert("making request,filter size:"+filterParam.length);
-	populateGrid('leader',filterParam,false,'leader_user_data',toAppend);
+	populateGrid('leader',filterParam,'leader_user_data');
 	leader_offset+=5;
 }
 var party_offset=0;
@@ -113,7 +113,7 @@ var party_load=function(toAppend,searchFor,tempOffset){
 	filterParam.push(new paramContainer('searchFor',searchFor));
 	filterParam.push(new paramContainer("offset",party_offset));
 	//alert("making request,filter size:"+filterParam.length);
-	populateGrid('party',filterParam,false,'party_user_data',toAppend);
+	populateGrid('party',filterParam,'party_user_data');
 	party_offset+=5;
 }
 

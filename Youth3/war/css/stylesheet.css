@@ -29,6 +29,16 @@ input[type=button]:active {
 	margin: 0px;
 }
 
+.TwitterFeed .jta-tweet-list
+{
+    height: 400px;
+    overflow:auto;
+}
+.Twitter_iFrame
+{
+	float:left; 
+	padding-left:30px;
+}
 body,html{
 		top:0px;
 		margin:0px;
